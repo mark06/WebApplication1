@@ -1,0 +1,9 @@
+C:\Users\Mark\Documents\Visual Studio 2013\Projects\WebApplication1\WebApp1.Configuration\bin\Debug\WebApp1.Configuration.dll
+C:\Users\Mark\Documents\Visual Studio 2013\Projects\WebApplication1\WebApp1.Configuration\bin\Debug\WebApp1.Configuration.pdb
+C:\Users\Mark\Documents\Visual Studio 2013\Projects\WebApplication1\WebApp1.Configuration\obj\Debug\WebApp1.Configuration.dll
+C:\Users\Mark\Documents\Visual Studio 2013\Projects\WebApplication1\WebApp1.Configuration\obj\Debug\WebApp1.Configuration.pdb
+C:\Users\Mark\Documents\Visual Studio 2015\Projects\WebApplication1\WebApp1.Configuration\bin\Debug\WebApp1.Configuration.dll
+C:\Users\Mark\Documents\Visual Studio 2015\Projects\WebApplication1\WebApp1.Configuration\bin\Debug\WebApp1.Configuration.pdb
+C:\Users\Mark\Documents\Visual Studio 2015\Projects\WebApplication1\WebApp1.Configuration\obj\Debug\WebApp1.Configuration.csprojResolveAssemblyReference.cache
+C:\Users\Mark\Documents\Visual Studio 2015\Projects\WebApplication1\WebApp1.Configuration\obj\Debug\WebApp1.Configuration.dll
+C:\Users\Mark\Documents\Visual Studio 2015\Projects\WebApplication1\WebApp1.Configuration\obj\Debug\WebApp1.Configuration.pdb

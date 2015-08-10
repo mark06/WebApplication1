@@ -1,0 +1,68 @@
+﻿@model List<WebApp1.Entities.Movie>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<p>
+    @*@if (Context.User.IsInRole("Admin")) {*@
+        @Html.ActionLink("Create New", "Create")
+        @Html.ActionLink("Genres","GetGenres")
+        @*}*@
+</p>
+<div>
+        <input type="text" id="search_string" />
+        <button id="search_button">Search</button>
+</div>
+<br />
+<div id="movies_div">
+    <table class="table">
+        <tr>
+            <th>
+                Title
+            </th>
+            <th>
+                Release Date
+            </th>
+            <th>
+                Genre
+            </th>
+            <th>
+                Price
+            </th>
+            <th></th>
+        </tr>
+
+    @foreach (var item in Model) {
+        <tr class="movie_table_row">
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ReleaseDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Genre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Price)
+            </td>
+            <td>
+                @*@if (Context.User.IsInRole("Admin")) {*@
+                    @Html.ActionLink("Edit", "Edit", new { id=item.ID })
+                @* } *@
+            </td>
+        </tr>
+    }
+    </table>
+</div>
+<div class="navigation_div">
+    <center>
+        @for (int i = 1; i <= ViewBag.NoOfPages; i++)
+        {
+            string link = "?currentPage=" + i;
+            <a class ="navigation_pages" id="page_@i">@i</a>
+        }
+    </center>
+</div>

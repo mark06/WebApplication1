@@ -1,0 +1,20 @@
+﻿@model List<WebApp1.Entities.Genre>
+
+@{
+    ViewBag.Title = "Genres";
+}
+
+    <h3>Available Genres</h3>
+    <button style="margin-bottom:10px" id="add_genre_button">Add Genre</button>
+    <div>
+        @foreach (var item in Model){
+       <table class="table" id="genres_table">
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.GenreName)
+                </td>
+            </tr>    
+        </table>
+        }
+    </div>
+

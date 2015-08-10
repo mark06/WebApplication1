@@ -66,3 +66,6 @@
         }
     </center>
 </div>
+<script type="text/javascript">
+    window.isAdmin = @Context.User.IsInRole("Admin").ToString().ToLower();
+</script>

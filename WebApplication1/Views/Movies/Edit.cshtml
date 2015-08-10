@@ -40,10 +40,10 @@
             @Html.LabelFor(model => model.Genre, new { @class = "control-label col-md-2 genre-label" })
             <div class="col-md-10">
                <select id="genre_reselect" name="genre_reselect">
-                   <option value="current">@Html.DisplayFor(model => model.Genre)</option>
+                   <option value="@Html.DisplayFor(model => model.Genre)">@Html.DisplayFor(model => model.Genre)</option>
                    @foreach(var item in ViewBag.Genres)
                    {
-                       <option value="@item.GenreName">@item.GenreName</option>
+                           <option value="@item.GenreName">@item.GenreName</option> 
                    }
                 </select>
             </div>

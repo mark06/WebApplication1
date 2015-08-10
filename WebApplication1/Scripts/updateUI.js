@@ -18,6 +18,9 @@
         } else {
             day = relDate.getDate();
         }
-        jQuery("#movies_div table").append("<tr class ='movie_table_row'><td>" + result.data[i].Title + "</td><td>" + day + "." + month + "." + relDate.getFullYear() + "</td><td>" + result.data[i].Genre + "</td><td>" + result.data[i].Price + "</td></tr>");
+        jQuery("#movies_div table").append("<tr class ='movie_table_row'><td>" + result.data[i].Title + "</td><td>" + day + "." + month + "." + relDate.getFullYear() + "</td><td>" + result.data[i].Genre + "</td><td>" + result.data[i].Price + "</td><td><a class='movie_edit_links' href ='Movies/Edit/" + result.data[i].ID + "'>Edit</a></td></tr>");
+    }
+    if (!window.isAdmin) {
+        jQuery(".movie_edit_links").remove();
     }
  }

@@ -48,7 +48,7 @@
             <td>
                 @Html.DisplayFor(modelItem => item.Price)
             </td>
-            <td>s
+            <td>
                 @if (Context.User.IsInRole("Admin")) {
                     @Html.ActionLink("Edit", "Edit", new { id=item.ID })
                  } 
